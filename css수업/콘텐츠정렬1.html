@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>콘텐츠 정렬</title>
+  <style>
+    *{margin:0; padding:0;}
+    a{text-decoration:non; color:inherit;}
+
+    body{
+      color:#333;
+
+    }
+
+    .container{
+      
+      width:1080px;
+      margin:auto;
+    }
+    .clearfix::after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+    .container > .box{
+
+      width:520px;
+      float:left;
+      margin:0 10px 40px;
+    
+    }
+    .box > img{
+      float:left;
+
+
+    }
+    .box > .text{
+      float:left;
+      width:340px;
+      margin-left:20px;
+
+    }
+    .text > h2{
+      font-size:24px;
+      margin-bottom:5px;
+
+    }
+    .text > p{
+      font-size:14px;
+      margin-bottom:10px;
+
+    .text a{margin-right:5px;}
+
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container clearfix">
+    <div class="box">
+      <img src="https://picsum.photos/160" alt="">
+      <div class="text">
+        <h2>Segment Title</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.. Excepturi perspiciatis libero at. Autem ipsum aperiam ratione possimus et iste.</p>
+        <div class="link">
+          <a href="#"><img src="images/facebook_b.png" alt="facebook"></a>
+          <a href="#"><img src="images/pinterest_b.png" alt="pinterest"></a>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://picsum.photos/160" alt="">
+      <div class="text">
+        <h2>Segment Title</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.. Excepturi perspiciatis libero at. Autem ipsum aperiam ratione possimus et iste.</p>
+        <div class="link">
+          <a href="#"><img src="images/facebook_b.png" alt="facebook"></a>
+          <a href="#"><img src="images/pinterest_b.png" alt="pinterest"></a>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://picsum.photos/160" alt="">
+      <div class="text">
+        <h2>Segment Title</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.. Excepturi perspiciatis libero at. Autem ipsum aperiam ratione possimus et iste.</p>
+        <div class="link">
+          <a href="#"><img src="images/facebook_b.png" alt="facebook"></a>
+          <a href="#"><img src="images/pinterest_b.png" alt="pinterest"></a>
+        </div>
+      </div>
+    </div>
+    <div class="box">
+      <img src="https://picsum.photos/160" alt="">
+      <div class="text">
+        <h2>Segment Title</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.. Excepturi perspiciatis libero at. Autem ipsum aperiam ratione possimus et iste.</p>
+        <div class="link">
+          <a href="#"><img src="images/facebook_b.png" alt="facebook"></a>
+          <a href="#"><img src="images/pinterest_b.png" alt="pinterest"></a>
+        </div>
+      </div>
+    </div>
+
+
+
+</div>
+
+</body>
+
+</html>
