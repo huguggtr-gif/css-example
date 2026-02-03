@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="reset.css" rel="stylesheet">
+
+    <style>
+        .container {
+            background-image: url(images/bgcar.jpg);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+
+            width: 100%;
+            min-width: 1200px;
+
+        }
+
+        .box {
+            width: 1200px;
+            margin: auto;
+            display: flex;
+            gap: 20px;
+            padding: 40px 10px;
+
+        }
+
+        .box>.content {
+
+            width: 280px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .box>.content1 {
+            background-image: url(images/car.png);
+            background-repeat: no-repeat;
+            background-position: center top;
+
+            width: 580px;
+            height: 520px;
+            gap: 20px;
+            display: flex;
+            flex-direction: column;
+
+
+        }
+
+        .smallbox {
+
+
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+            width: 280px;
+            height: 240px;
+            display: flex;
+            gap: 20px;
+            height: 100%;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            flex-direction: column;
+
+        }
+
+        .box-top {
+            display: flex;
+            gap: 45px;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .box-top>.txt p {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .box-bottom {
+            display: flex;
+            gap: 60px;
+
+            align-items: flex-end;
+        }
+
+        .box-bottom :nth-child(1) {
+            color: #5faad9;
+            font-size: 60px;
+            font-weight: bold;
+            line-height: 1;
+            /*여백없애기*/
+        }
+
+        .box-bottom :nth-child(2) {
+            color: #666;
+            font-size: 30px;
+            line-height: 1;
+            font-weight: 500;
+        }
+
+        .content1 h1 {
+            font-size: 60px;
+            color: #5faad9;
+            text-align: center;
+
+            text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .content1 h2 {
+            text-align: center;
+            letter-spacing: -1px;
+            padding-top: 80px;
+
+            font-size: 42px;
+            color: #5faad9;
+            font-weight: 300;
+            text-shadow: 7px 7px 5px rgba(0, 0, 0, 0.3);
+            line-height: 1.1;
+    </style>
+    </head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <div class="smallbox">
+                    <div class="box-top">
+                        <div class="txt">
+                            <p>아름답고 열매를 곳으로 목숨이 봄바람이다.</p>
+                        </div>
+                        <img class="icon" src="images/icon.png" alt="">
+
+                    </div>
+                    <div class="box-bottom">
+                        <p>15</p>
+                        <p>건</p>
+                    </div>
+                </div><!--smallbox-->
+                <div class="smallbox">
+                    <div class="box-top">
+                        <div class="txt">
+                            <p>아름답고 열매를 곳으로 목숨이 봄바람이다.</p>
+                        </div>
+                        <img class="icon" src="images/icon.png" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <p>15</p>
+                        <p>건</p>
+                    </div>
+                </div><!--smallbox-->
+            </div> <!--content end-->
+
+            <div class="content1">
+                <div class="smallbox1">
+                    <h2>도로위의 잔혹사</h2>
+                    <h1>로드킬(ROAD KILL)</h1>
+
+                </div><!--smallbox1-->
+            </div> <!--content end-->
+
+            <div class="content">
+                <div class="smallbox">
+                    <div class="box-top">
+                        <div class="txt">
+                            <p>아름답고 열매를 곳으로 목숨이 봄바람이다.</p>
+                        </div>
+                        <img class="icon" src="images/icon.png" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <p>15</p>
+                        <p>건</p>
+                    </div>
+                </div><!--smallbox-->
+                <div class="smallbox">
+                    <div class="box-top">
+                        <div class="txt">
+                            <p>아름답고 열매를 곳으로 목숨이 봄바람이다.</p>
+                        </div>
+                        <img class="icon" src="images/icon.png" alt="">
+                    </div>
+                    <div class="box-bottom">
+                        <p>15</p>
+                        <p>건</p>
+                    </div>
+                </div><!--smallbox-->
+            </div> <!--content end-->
+
+
+
+        </div><!--box end-->
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="reset.css" rel="stylesheet">
+    <style>
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        #container {
+            width: 1080px;
+            margin: 50px auto;
+
+        }
+
+        .container .content {
+            width: 540px;
+            height: 520px;
+            float: left;
+            margin: 0 10px 20px;
+            
+        }
+
+        .item{
+            width:100%;
+            margin-bottom:20px;
+        }
+
+        .content>.box {
+            width: 160px;
+            height: 160px;
+            float: left;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .content>.txt {
+            float: left;
+           
+            width: 340px;
+            margin-left: 20px;
+        }
+
+        .imgbox {
+
+            width: 520px;
+            height: 520px;
+            float: left;
+
+        }
+
+        .imgbox img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="container" class="clearfix">
+        <div class="content">
+            <div class="item clearfix">
+                <div class="box">
+                    <a href="#"><img src="images/winter1.jpg" alt="">
+                    </a>
+                </div>
+                <div class="txt">
+                    <h1>DESCRIPTION</h1><br><br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi rem nihil auis minima quidem
+                        nisi
+                        error consectetur, quasi quaerat voluptas iure enim ea.
+                    </p>
+                </div>
+            </div>
+            <div class="item clearfix">
+                <div class="box">
+                    <a href="#"><img src="images/winter2.jpg" alt="">
+                    </a>
+                </div>
+                <div class="txt">
+                    <h1>DESCRIPTION</h1><br><br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi rem nihil auis minima quidem
+                        nisi
+                        error consectetur, quasi quaerat voluptas iure enim ea.
+                    </p>
+                </div>
+            </div>
+
+            <div class="item clearfix">
+                <div class="box">
+                    <a href="#"><img src="images/winter3.jpg" alt="">
+                    </a>
+                </div>
+                <div class="txt">
+                    <h1>DESCRIPTION</h1><br><br>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel quasi rem nihil auis minima quidem
+                        nisi
+                        error consectetur, quasi quaerat voluptas iure enim ea.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="imgbox">
+            <a href="#"><img src="images/asdf.jpg" alt=""></a>
+        </div>
+    </section>
+</body>
+
+</html>

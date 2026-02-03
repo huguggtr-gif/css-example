@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="reset.css" rel="stylesheet">
+    <style>
+        .container {
+
+            width: 1080px;
+            margin: auto;
+            display: flex;
+
+            padding: 10px;
+            gap: 20px;
+        }
+
+        .box img {
+            display: block;
+        }
+
+        .box>.subimg {
+            width: 100%;
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+
+        }
+
+        .box>.subimg>li {
+            cursor: pointer;
+
+            filter: grayscale(100%);
+            /*흑백*/
+
+        }
+
+        .box>.subimg>li:hover {
+            filter: grayscale(0%);
+            /*컬러*/
+
+        }
+
+
+
+        .detail>h1 {
+            font-size: 36px;
+            line-height: 2.0;
+            color: #333;
+        }
+
+        .detail>h2 {
+            font-size: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .detail>.selectgroup {
+            margin: 20px 0;
+            display: flex;
+            gap: 20px;
+
+        }
+
+        .selectgroup>select {
+            width: 160px;
+            height: 40px;
+            border: none;
+            background-color: #ccc;
+            padding: 10px;
+
+        }
+
+        .detail>.color {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+
+        }
+
+        .dot {
+            display: flex;
+            gap: 10px;
+        }
+
+        .dot>li {
+            width: 20px;
+            height: 20px;
+            background-color: gray;
+            border-radius: 50%;
+        }
+
+        .dot>.red {
+            background-color: tomato;
+        }
+
+        .dot>.yellow {
+            background-color: gold;
+        }
+
+        .dot>.blue {
+            background-color: skyblue;
+        }
+
+        .detail>.txt {
+            margin: 40px 0;
+        }
+
+        .txt>li {
+            border-top:1px solid #999;
+            border-bottom:1px solid #999;
+            cursor:pointer;
+
+        }
+        /*첫번째 li요소의 밑줄을 제거*/
+
+
+        .txt>li:first-child{
+            border-bottom:0;
+        }
+
+        .txt>li>h3 {
+            font-size: 14px;
+            line-height: 40px;
+            color: #333;
+        }
+
+        .txt>li>p {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 10px;
+            display: none;
+
+        }
+
+        .txt>.active>p {
+            /*active클래스가 추가된 li요소의 자식요소인 p요소만 나타나게 함*/
+            display: block;
+        }
+        .detail .btn{
+            display:flex;
+            gap:20px;
+
+        }
+        .btn > button{
+            width:250px;
+            height:40px;
+            border:1px solid #999;
+            font-size:16px;
+            border-radius:20px;
+            cursor:pointer;
+        }
+        .btn > button:hover{
+            background-color:#666;
+            color:#fff;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="box">
+            <div class="mainimg"> <img src="https://picsum.photos/520/520" alt=""></div>
+            <ul class="subimg">
+                <li><img src="https://picsum.photos/80" alt=""></li>
+                <li><img src="https://picsum.photos/80" alt=""></li>
+                <li><img src="https://picsum.photos/80" alt=""></li>
+                <li><img src="https://picsum.photos/80" alt=""></li>
+                <li><img src="https://picsum.photos/80" alt=""></li>
+            </ul>
+        </div>
+        <form class="detail">
+            <h1>Division Title</h1>
+            <h2>10,000 ￦</h2>
+            <div class="selectgroup">
+                <select>
+                    <option>SIZE</option>
+
+                </select>
+                <select>
+                    <option>QTY</option>
+
+
+                </select>
+            </div>
+            <div class="color">
+                <p>COLORS</p>
+                <ul class="dot">
+                    <li class="red"></li>
+                    <li class="yellow"></li>
+                    <li class="blue"></li>
+                </ul>
+            </div>
+            <ul class="txt">
+                <li class="active">
+                    <h3>- DESCRIPTION</h3>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse consequuntur nam ad
+                        commodi doloremque sit, earum molestias ire architecto
+
+                        sit, earum molestias inventore architecto?</P>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse consequuntur nam ad
+                        commodi doloremque
+
+                        sit, earum molestias inventore architecto?</P>
+                </li>
+                <li>
+                    <h3>+ DESCRIPTION</h3>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse consequuntur nam ad
+                        commodi doloremque
+                        dicta. Eius ex
+                        sit, earum molestias inventore architecto?</P>
+                    <P>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse consequuntur nam ad
+                        commodi do
+                        sit, earum molestias inventore architecto?</P>
+                </li>
+            </ul>
+
+
+            <div class="btn">
+                <button type="button">BUTTON</button>
+                <button type="button">BUTTON</button>
+            </div>
+
+
+        </form>
+
+
+
+    </section>
+
+</body>
+
+</html>

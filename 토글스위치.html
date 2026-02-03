@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>토글스위치</title>
+    <style>
+        .switch{
+            position:relative;
+            display:inline-block;
+            width:60px;
+            height:34px;
+
+        }
+        /*체크 박스는 화면에서 제거*/
+
+        .switch input{display:none;}
+        /*토글 스위치*/
+        .slider{
+            position:absolute;
+            inset:0;
+            background-color:#ccc;
+            cursor:pointer;
+            transition:.4s;
+        }
+
+        .slider::before{
+            content:"";
+            position:absolute;
+            width:26px; height:26px;
+            background-color:#fff;
+            left:4px; top:4px;
+            transition:.4s;
+        }
+
+        input:checked + .slider{
+            /*input요소에 checked속성이 적용되면 다음 형제요소인 .slider를 선택*/
+            background-color:#2196f3;
+
+        }
+        input:checked + .slider::before{
+            /*체크박스가 체크되면 포인터는 오른쪽으로 보내줍니다*/
+            transform:translateX(26px);
+        }
+        
+        .slider.round{/*라운드추가*/
+            border-radius: 34px;
+        }
+        .slider.round::before{
+                border-radius: 50%;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <label class="switch">
+        <input type="checkbox">
+        <span class="slider"></span>
+    </label>
+    <label class="switch">
+        <input type="checkbox" checked>
+        <span class="slider"></span>
+    </label>
+    <br><br>
+
+
+     <label class="switch">
+        <input type="checkbox">
+        <span class="round"></span>
+    </label>
+    <label class="switch">
+        <input type="checkbox" checked>
+        <span class="round"></span>
+    </label>
+</body>
+</html>
